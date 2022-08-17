@@ -1,0 +1,34 @@
+.content {
+  width: 984px;
+  .nav {
+    h2 {
+      font-size: 1.5rem;
+      line-height: 1.333;
+    }
+    .dropdown {
+      margin-left: 20px;
+      height: 32px;
+      .btn {
+        padding: 3px 12px;
+      }
+    }
+  }
+  .siteTools{
+    li {
+      &:not(:last-child){
+        margin-right: 26px;
+      }
+      a {
+        display: block;
+        line-height: 0;
+        width: 24px;
+        height: 24px;
+        color: $gray-900;
+        @include transition(color, .3s ease 0s);
+        &:hover {
+          color: $success;
+        }
+      }
+    }
+  }
+}

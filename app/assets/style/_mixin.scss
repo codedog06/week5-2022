@@ -1,3 +1,7 @@
 @mixin RobotoMono {
   font-family: 'Roboto Mono', monospace;
 }
+
+@mixin transition($transition-event, $time) {
+  transition: #{$transition-event $time};
+}

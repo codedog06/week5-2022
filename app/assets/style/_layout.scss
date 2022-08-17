@@ -1,0 +1,42 @@
+.userImg {
+  width: 32px;
+  height: 32px;
+}
+
+aside {
+  display: flex;
+  max-width: 296px;
+  background-color: $gray-100;
+  flex-direction: column;
+  .nav-item {
+    border-left: 4px solid transparent;
+    @include transition(border-left, .3s ease 0s);
+    a {
+      display: flex;
+      padding: 4px 0;
+      align-items: center;
+      color: $gray-900;
+      font-weight: 700;
+      @include transition(color, .3s ease 0s);
+      span {
+        color: $gray-900;
+        @include transition(color, .3s ease 0s);
+      }
+      &:hover,
+      &.current {
+        color: $success;
+        span {
+          color: $success;
+        }
+      }
+    }
+    &.current,
+    &:hover {
+      border-left: 4px solid $success;
+    }
+  }
+  .card {
+    margin-top: auto;
+    background-color: none;
+  }
+}

@@ -1,5 +1,4 @@
-console.log('Hello!');
-
-$(document).ready(() => {
-  console.log('HesSchool Hello!');
-});
+var myDropdown = document.getElementById('myDropdown')
+myDropdown.addEventListener('show.bs.dropdown', function () {
+  // do something...
+})
