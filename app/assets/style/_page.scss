@@ -1,5 +1,5 @@
 .content {
-  width: 984px;
+  min-width: 984px;
   .nav {
     h2 {
       font-size: 1.5rem;
@@ -7,10 +7,6 @@
     }
     .dropdown {
       margin-left: 20px;
-      height: 32px;
-      .btn {
-        padding: 3px 12px;
-      }
     }
   }
   .siteTools{
