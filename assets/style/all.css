@@ -4820,6 +4820,24 @@ aside {
         transition: none; } }
     .content .siteTools li a:hover {
       color: #198754; }
+  .content .details small, .content .details .small {
+    font-size: 0.75rem;
+    line-height: 2; }
+  .content .moreSelect a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    color: #212529;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    @media (prefers-reduced-motion: reduce) {
+      .content .moreSelect a {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; } }
+    .content .moreSelect a:hover {
+      color: #198754; }
 
 .align-baseline {
   vertical-align: baseline !important; }
