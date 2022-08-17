@@ -17,14 +17,28 @@
       a {
         display: block;
         line-height: 0;
-        width: 24px;
-        height: 24px;
+        @include iconEqualSize(24);
         color: $gray-900;
         @include transition(color, .3s ease 0s);
         &:hover {
           color: $success;
         }
       }
+    }
+  }
+  .details {
+    small {
+      @include fontSize(0.75, 2);
+    }
+  }
+  .moreSelect a{
+    display: block;
+    width: 24px;
+    height: 24px;
+    color: $gray-900;
+    @include transition;
+    &:hover {
+      color: $success;
     }
   }
 }

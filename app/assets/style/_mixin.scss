@@ -5,3 +5,13 @@
 @mixin transition($transition-event, $time) {
   transition: #{$transition-event $time};
 }
+
+@mixin fontSize($fz, $lh){
+  font-size: #{$fz}rem;
+  line-height: #{$lh};
+}
+
+@mixin iconEqualSize($size){
+  width: #{$size}px;
+  height: #{$size}px;
+}
