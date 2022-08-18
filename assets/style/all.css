@@ -4959,6 +4959,17 @@ aside {
       background-position: 50% 50%;
       top: 7px;
       left: 12px; }
+  .content .feedback .icon {
+    width: 24px;
+    height: 24px;
+    -webkit-transition: all, 0.3s ease 0s;
+    -o-transition: all, 0.3s ease 0s;
+    transition: all, 0.3s ease 0s; }
+    @media (prefers-reduced-motion: reduce) {
+      .content .feedback .icon {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; } }
   .content .feedback img {
     -o-object-fit: cover;
        object-fit: cover;
