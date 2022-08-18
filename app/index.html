@@ -34,7 +34,7 @@ current: index
   <div class="container-fluid p-0">
     <div class="row pt-2">
       <div class="col-4">
-        <div class="dropdown" style="margin-bottom: 6px;">
+        <div class="dropdown">
           <button class="btn dropdown-toggle" type="button" id="myDropdown2"
             data-bs-toggle="dropdown" aria-expanded="false">All<span>(4)</span></button>
           <ul class="dropdown-menu" aria-labelledby="myDropdown2">
@@ -47,65 +47,78 @@ current: index
           <a href="#" class="list-group-item list-group-item-action active">
             <div class="row flex-column">
               <div class="col w-100 d-flex justify-content-between">
-                <small class="text-muted gray-900">Chapter Assignment 2</small>
-                <small class="text-muted gray-900">4 hrs ago</small>
+                <p class="small text-muted gray-900 mb-0">Chapter Assignment 2</p>
+                <p class="small text-muted gray-900 mb-0">4 hrs ago</p>
               </div>
               <div class="col w-100 d-flex justify-content-between align-items-center">
                 <p class="mb-0 fw-bold gray-900">Please check this file…</p>
-                <small class="text-muted gray-600">Emily Wang</small>
+                <p class="small text-muted gray-600 mb-0">Emily Wang</p>
               </div>
             </div>
           </a>
           <a href="#" class="list-group-item list-group-item-action">
             <div class="row flex-column">
               <div class="col w-100 d-flex justify-content-between">
-                <small class="text-muted gray-900">Chapter Assignment 1</small>
-                <small class="text-muted gray-900">12 hrs ago</small>
+                <p class="small mb-0 text-muted gray-900">Chapter Assignment 1</p>
+                <p class="small mb-0 text-muted gray-900">12 hrs ago</p>
               </div>
               <div class="col w-100 d-flex justify-content-between align-items-center">
                 <p class="mb-0 gray-900">My Homework</p>
-                <small class="text-muted gray-600">David Xu</small>
+                <p class="small mb-0 text-muted gray-600">David Xu</p>
               </div>
             </div>
           </a>
           <a href="#" class="list-group-item list-group-item-action">
             <div class="row flex-column">
               <div class="col w-100 d-flex justify-content-between">
-                <small class="text-muted gray-900">Final Assignment</small>
-                <small class="text-muted gray-900">18 hrs ago</small>
+                <p class="small mb-0 text-muted gray-900">Final Assignment</p>
+                <p class="small mb-0 text-muted gray-900">18 hrs ago</p>
               </div>
               <div class="col w-100 d-flex justify-content-between align-items-center">
                 <p class="mb-0 gray-900">Have a problem with this…</p>
-                <small class="text-muted gray-600">Tony Wei</small>
+                <p class="small mb-0 text-muted gray-600">Tony Wei</p>
               </div>
             </div>
           </a>
           <a href="#" class="list-group-item list-group-item-action">
             <div class="row flex-column">
               <div class="col w-100 d-flex justify-content-between">
-                <small class="text-muted gray-900">Final Assignment</small>
-                <small class="text-muted gray-900">12 hrs ago</small>
+                <p class="small mb-0 text-muted gray-900">Final Assignment</p>
+                <p class="small mb-0 text-muted gray-900">12 hrs ago</p>
               </div>
               <div class="col w-100 d-flex justify-content-between align-items-center">
                 <p class="mb-0 gray-900">Did I do it right?</p>
-                <small class="text-muted gray-600">Christina Lin</small>
+                <p class="small mb-0 text-muted gray-600">Christina Lin</p>
               </div>
             </div>
           </a>
         </div>
       </div>
       <div class="col details">
-        <div class="text-end"><small class="text-muted">2 comments</small></div>
-        <div class="card border-0">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center bg-secondary px-3 py-2">
+        <div class="mb-2"><p class="text-end small d-block text-muted mb-2">2 comments</small></p>
+        
+        <div class="card border-rounded">
+          <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center bg-secondary">
               <div>
-                <small class="text-muted">Chapter Assignment 2 / HTML&CSS</small>
+                <p class="small text-muted mb-0">Chapter Assignment 2 / HTML&CSS</p>
                 <p class="fw-bold mb-0">Please check this file for me, thanks!</p>
               </div>
               <div class="moreSelect"><a href="javascript:;" class="text-decoration-none"><span class="material-symbols-outlined d-block">more_vert</span></a></div>
             </div>
           </div>
+          <ul class="feedback list-group list-group-flush">
+            <li class="list-group-item border-bottom-0 d-flex p-3">
+              <div class="userIcon"><img class="rounded-circle img-fluid" src="./assets/images/emilywang.jpeg" alt=""></div>
+              <div class="border-2 border-bottom mx-2">
+                <div class="d-flex justify-content-between"><p class="fw-bold mb-0">Emily Wang</p></div>
+                <p class="small text-muted mb-1">10:38 AM (4 hours ago)</p>
+                <p><small>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="alert alert-success" role="alert">div</span> is bigger than the height of the img ? There is a gap below the <span class="alert alert-success" role="alert">image</span>, but it doesn’t seems to be a padding/margin. <br />What is the gap or extra space below image?</small></p>
+                <button type="button" class="btn-upload btn btn-outline-success">HW-2-David.zip</button>
+              </div>
+            </li>
+            <li class="list-group-item border-bottom-0">A second item</li>
+          </ul>
         </div>
       </div>
     </div>

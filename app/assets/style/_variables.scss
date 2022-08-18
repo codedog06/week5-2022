@@ -490,7 +490,7 @@ $border-widths: (
 ) !default;
 
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
+$border-color:                $gray-300; //$gray-300 !default;
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
@@ -1439,8 +1439,8 @@ $modal-scale-transform:             scale(1.02) !default;
 // Define alert colors, border radius, and padding.
 
 // scss-docs-start alert-variables
-$alert-padding-y:               $spacer !default;
-$alert-padding-x:               $spacer !default;
+$alert-padding-y:               $spacer * 0.125 !default;
+$alert-padding-x:               $spacer * 0.125 !default;
 $alert-margin-bottom:           1rem !default;
 $alert-border-radius:           $border-radius !default;
 $alert-link-font-weight:        $font-weight-bold !default;
