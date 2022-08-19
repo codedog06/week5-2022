@@ -61,9 +61,38 @@
         left: 12px;
       }
     }
+    .icon {
+      margin-right: 24px;
+      @include iconEqualSize(24);
+      @include transition (all, .3s ease 0s);
+      color: $gray-900;
+      &:hover {
+        color: $success;
+      }
+    }
     img {
       object-fit: cover;
       @include iconEqualSize(40)
     }
   }
+  .replyBox {
+    .reply-dropdown {
+      color: $gray-900;
+      width: 98px;
+    }
+    .replyBoxIcon {
+      color: $gray-900;
+      @include iconEqualSize(24);
+      @include transition(all, .3s ease 0s);
+      &:hover {
+        color: $success;
+      }
+      &.col-2 {
+        span {
+          display: inline-block;
+          width: 12px;
+        }
+      }
+    }
+  } 
 }

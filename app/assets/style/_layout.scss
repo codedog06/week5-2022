@@ -3,9 +3,15 @@
   height: 32px;
 }
 
+.wraper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 aside {
   display: flex;
   max-width: 296px;
+  min-width: 296px;
   background-color: $gray-100;
   flex-direction: column;
   .nav-item {

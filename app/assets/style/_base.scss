@@ -6,3 +6,13 @@ body, html {
 p.small {
   @include fontSize(0.75, 2);
 }
+
+.arrow {
+  width: 24px;
+  height: 24px;
+  color: $gray-900;
+  @include transition;
+  &:hover {
+    color: $success;
+  }
+}
