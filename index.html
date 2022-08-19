@@ -51,10 +51,10 @@
         </div>
       </div>
     </aside>
-    <main class="vw-100 px-5">
+    <main class="vw-100">
       
 
-<div class="content">
+<div class="content px-5">
 
   <ul class="nav justify-content-between align-items-center py-5">
     <li class="nav-item d-flex">
@@ -78,8 +78,8 @@
     </li>
   </ul>
   <div class="container-fluid p-0">
-    <div class="row pt-2">
-      <div class="col-4">
+    <div class="d-flex pt-2">
+      <div class="me-3">
         <div class="dropdown">
           <button class="btn dropdown-toggle" type="button" id="myDropdown2" data-bs-toggle="dropdown" aria-expanded="false">All<span>(4)</span></button>
           <ul class="dropdown-menu" aria-labelledby="myDropdown2">
@@ -108,7 +108,7 @@
                 <p class="small mb-0 text-muted gray-900">12 hrs ago</p>
               </div>
               <div class="col w-100 d-flex justify-content-between align-items-center">
-                <p class="mb-0 gray-900">My Homework</p>
+                <p class="mb-0 gray-900 fw-bold">My Homework</p>
                 <p class="small mb-0 text-muted gray-600">David Xu</p>
               </div>
             </div>
@@ -120,7 +120,7 @@
                 <p class="small mb-0 text-muted gray-900">18 hrs ago</p>
               </div>
               <div class="col w-100 d-flex justify-content-between align-items-center">
-                <p class="mb-0 gray-900">Have a problem with this…</p>
+                <p class="mb-0 gray-900 fw-bold">Have a problem with this…</p>
                 <p class="small mb-0 text-muted gray-600">Tony Wei</p>
               </div>
             </div>
@@ -132,59 +132,101 @@
                 <p class="small mb-0 text-muted gray-900">12 hrs ago</p>
               </div>
               <div class="col w-100 d-flex justify-content-between align-items-center">
-                <p class="mb-0 gray-900">Did I do it right?</p>
+                <p class="mb-0 gray-900 fw-bold">Did I do it right?</p>
                 <p class="small mb-0 text-muted gray-600">Christina Lin</p>
               </div>
             </div>
           </a>
         </div>
       </div>
-      <div class="col details">
-        <div class="mb-2">
-          <p class="text-end small d-block text-muted mb-2">2 comments</small></p>
-          <div class="card border-rounded">
-            <div class="card-header">
-              <div class="d-flex justify-content-between align-items-center bg-secondary">
-                <div>
-                  <p class="small text-muted mb-0">Chapter Assignment 2 / HTML&CSS</p>
-                  <p class="fw-bold mb-0">Please check this file for me, thanks!</p>
+      <div class="details mb-3">
+        <p class="text-end small d-block text-muted mb-2">2 comments</small></p>
+        <div class="card border-rounded mb-3">
+          <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center bg-secondary">
+              <div>
+                <p class="small text-muted mb-0">Chapter Assignment 2 / HTML&CSS</p>
+                <p class="fw-bold mb-0">Please check this file for me, thanks!</p>
+              </div>
+              <div class="moreSelect"><a href="javascript:;" class="text-decoration-none"><span class="material-symbols-outlined d-block">more_vert</span></a></div>
+            </div>
+          </div>
+          <ul class="feedback list-group list-group-flush">
+            <li class="list-group-item border-bottom-0 d-flex p-3">
+              <div class="userIcon"><img class="rounded-circle img-fluid" src="./assets/images/emilywang.jpeg" alt=""></div>
+              <div class="border-2 border-bottom mx-2">
+                <div class="d-flex justify-content-between">
+                  <p class="fw-bold mb-0">Emily Wang</p>
                 </div>
-                <div class="moreSelect"><a href="javascript:;" class="text-decoration-none"><span class="material-symbols-outlined d-block">more_vert</span></a></div>
+                <p class="small text-muted mb-1">10:38 AM (4 hours ago)</p>
+                <p><small>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="text-success">div</code> is bigger than the height of the img ? There is a gap below the <code class="text-success">image</code>, but it doesn’t seems to be a padding/margin. <br />What is the gap or extra space below image?</small></p>
+                <button type="button" class="btn-upload btn btn-outline-success">HW-2-David.zip</button>
+              </div>
+            </li>
+            <li class="list-group-item border-bottom-0 d-flex p-3">
+              <div class="userIcon"><img class="rounded-circle img-fluid" src="./assets/images/andychen.jpeg" alt=""></div>
+              <div class="mx-2">
+                <div class="d-flex justify-content-between">
+                  <p class="fw-bold mb-0">Andy Chen (You)</p>
+                  <ul class="list-unstyled d-flex">
+                    <li><a href="javascript:;" class="icon d-block"><span class="material-symbols-outlined me-4">grade</span></a></li>
+                    <li><a href="javascript:;" class="icon d-block me-0"><span class="material-symbols-outlined">edit</span></a></li>
+                  </ul>
+                </div>
+                <p class="small text-muted mb-1">10:38 AM (4 hours ago)</p>
+                <small>Hi Emily, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                  <br><br>You can: <br>
+                  <ul class="list-style">
+                    <li>adjust the <code class="text-success">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="text-success">middle</code> ) or </li>
+                    <li>change the <code class="text-success">display</code> so it isn’t inline.</li>
+                  </ul>
+                </small>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-between align-items-center position-relative">
+          <div class="flex">
+            <a href="javascript:;" class="arrow d-inline-block me-4"><span class="material-symbols-outlined">chevron_left</span></a>
+            <a href="javascript:;" class="arrow d-inline-block"><span class="material-symbols-outlined">chevron_right</span></a>
+          </div>
+          <div>
+            <button type="button" class="btn btn-outline-success me-3">Mark as read</button>
+            <button type="button" class="btn btn-outline-success" id="reply" data-bs-toggle="collapse" data-bs-target="#replyCollapse" aria-controls="#replyCollapse">Reply</button>
+            <div class="collapse replyCollapse" id="replyCollapse">
+              <div class="card replyBox">
+                <div class="card-header px-4 py-3">
+                  <ul class="d-flex align-items-center list-unstyled mb-0">
+                    <li class="me-4">
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle reply-dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Body Text</button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Bold</a></li>
+                          <li><a class="dropdown-item" href="#">Underline</a></li>
+                          <li><a class="dropdown-item" href="#">Italic</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="me-4"><a href="javascript:;" class="d-block replyBoxIcon"><span class="material-symbols-outlined">format_bold</span></a></li>
+                    <li class="me-4"><a href="javascript:;" class="d-block replyBoxIcon"><span class="material-symbols-outlined">format_italic</span></a></li>
+                    <li class="me-4"><a href="javascript:;" class="d-block replyBoxIcon"><span class="material-symbols-outlined">format_list_bulleted</span></a></li>
+                    <li class="me-4"><a href="javascript:;" class="d-block replyBoxIcon"><span class="material-symbols-outlined">format_list_numbered</span></a></li>
+                    <li class="me-4"><a href="javascript:;" class="d-block replyBoxIcon"><span class="material-symbols-outlined">photo</span></a></li>
+                    <li class="me-3"><a href="javascript:;" class="d-block replyBoxIcon"><span class="material-symbols-outlined">link</span></a></li>
+                    <li><a href="javascript:;" class="d-block replyBoxIcon col-2"><span class="material-symbols-outlined">chevron_left</span><span class="material-symbols-outlined">chevron_right</span></a></li>
+                  </ul>
+                </div>
+                <div class="card-body px-4 py-3">
+                  <div class="form-floating position-relative">
+                    <textarea class="form-control border-0 p-0" placeholder="Reply an answer" id="floatingTextarea" style="height: 230px; margin-bottom: 35px;"></textarea>
+                    <div class="text-end position-absolute" style="right: 0; bottom: -35px;">
+                      <button type="button" class="btn btn-outline-success me-2" id="reply-close" data-bs-toggle="collapse" data-bs-target="#replyCollapse" aria-controls="#replyCollapse">Cancel</button>
+                      <button type="button" class="btn btn-outline-success">Reply</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <ul class="feedback list-group list-group-flush">
-              <li class="list-group-item border-bottom-0 d-flex p-3">
-                <div class="userIcon"><img class="rounded-circle img-fluid" src="./assets/images/emilywang.jpeg" alt=""></div>
-                <div class="border-2 border-bottom mx-2">
-                  <div class="d-flex justify-content-between">
-                    <p class="fw-bold mb-0">Emily Wang</p>
-                  </div>
-                  <p class="small text-muted mb-1">10:38 AM (4 hours ago)</p>
-                  <p><small>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="text-success">div</code> is bigger than the height of the img ? There is a gap below the <code class="text-success">image</code>, but it doesn’t seems to be a padding/margin. <br />What is the gap or extra space below image?</small></p>
-                  <button type="button" class="btn-upload btn btn-outline-success">HW-2-David.zip</button>
-                </div>
-              </li>
-              <li class="list-group-item border-bottom-0 d-flex p-3">
-                <div class="userIcon"><img class="rounded-circle img-fluid" src="./assets/images/andychen.jpeg" alt=""></div>
-                <div class="border-2 border-bottom mx-2">
-                  <div class="d-flex justify-content-between">
-                    <p class="fw-bold mb-0">Emily Wang</p>
-                    <ul class="list-unstyled d-flex">
-                      <li><a href="javascript:;" class="icon"><span class="material-symbols-outlined me-4">grade</span></a></li>
-                      <li><a href="javascript:;" class="icon"><span class="material-symbols-outlined">edit</span></a></li>
-                    </ul>
-                  </div>
-                  <p class="small text-muted mb-1">10:38 AM (4 hours ago)</p>
-                  <p><small>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
-                    <br><br>You can: <br>
-                    <ul class="list-style">
-                      <li>adjust the <code class="text-success">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="text-success">middle</code> ) or </li>
-                      <li>change the <code class="text-success">display</code> so it isn’t inline.</li>
-                    </ul>
-                  </small></p>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
